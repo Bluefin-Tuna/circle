@@ -1,0 +1,10 @@
+name: CircleDetection
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pytorch
+  - matplotlib
+  - scikit-image
+prefix: /Users/tanush/MiniForge/envs/CircleDetection
