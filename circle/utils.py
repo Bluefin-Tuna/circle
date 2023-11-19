@@ -62,7 +62,7 @@ def generate_examples(
     min_radius: Optional[int] = None,
     max_radius: Optional[int] = None,
     dataset_path: str = 'ds',
-) -> Generator[Tuple[np.ndarray, CircleParams], None, None]:
+) -> Tuple[np.ndarray, CircleParams]:
     if not min_radius:
         min_radius = img_size // 10
     if not max_radius:
@@ -71,8 +71,8 @@ def generate_examples(
     assert img_size > max_radius, "size should be greater than max_radius"
     assert noise_level >= 0, "noise should be non-negative"
 
-    params = f"{noise_level=}, {img_size=}, {min_radius=}, {max_radius=}, {dataset_path=}"
-    print(f"Using parameters: {params}")
+    # params = f"{noise_level=}, {img_size=}, {min_radius=}, {max_radius=}, {dataset_path=}"
+    # print(f"Using parameters: {params}")
     while True:
         img, params = noisy_circle(
             img_size=img_size, min_radius=min_radius, max_radius=max_radius, noise_level=noise_level
