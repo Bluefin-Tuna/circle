@@ -98,3 +98,4 @@ def iou(a: CircleParams, b: CircleParams) -> float:
     intersection = h1 + h2 + h3 + h4
     union = np.pi * (r1_sq + r2_sq) - intersection
     return intersection / union
+
