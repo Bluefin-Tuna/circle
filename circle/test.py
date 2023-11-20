@@ -31,7 +31,7 @@ def main():
         cp_hat = find_circle(model, img)
         results.append(iou(CircleParams(*cp), CircleParams(*cp_hat)))
     results = np.array(results)
-    print((results > 0.7).mean()) # 0.9561
+    print(results.mean()) # 0.9561
 
 if __name__ == "__main__":
     main()
