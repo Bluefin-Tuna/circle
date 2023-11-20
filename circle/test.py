@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import torchvision.transforms as transforms
 from circle.dataset import NoisyCircles
-from circle.utils import iou, CircleParams
+from circle.utils import iou, CircleParams, generate_examples
 from circle.regression import ConvNet
 
 DIR = "./data"
@@ -31,7 +31,7 @@ def main():
         cp_hat = find_circle(model, img)
         results.append(iou(CircleParams(*cp), CircleParams(*cp_hat)))
     results = np.array(results)
-    print(results.mean()) # 0.9561
+    print(results.mean()) # 0.9869
 
 if __name__ == "__main__":
     main()
