@@ -1,10 +1,17 @@
-name: CircleDetection
+name: CircleRegression
 channels:
-  - conda-forge
+  - defaults
 dependencies:
   - python=3.10
-  - numpy
-  - pytorch
-  - matplotlib
+  - numpy==1.22.4
   - scikit-image
-prefix: /Users/tanush/MiniForge/envs/CircleDetection
+  - matplotlib
+  - ipykernel
+  - tqdm
+  - torchvision
+  - pandas
+  - pytorch-cuda=11.8
+  - torchaudio
+  - cudatoolkit
+  - pytorch[build=*cuda*]
+prefix: /home/tanush/Miniconda/envs/CircleRegression
