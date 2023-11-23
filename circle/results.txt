@@ -1,0 +1,12 @@
+Mixed Noise Test: 0.9561
+
+0.0 Noise Test: 0.9948
+0.1 Noise Test: 0.9948
+0.2 Noise Test: 0.9937
+0.3 Noise Test: 0.9917
+0.4 Noise Test: 0.9874
+0.5 Noise Test: 0.9837
+0.6 Noise Test: 0.9654
+0.7 Noise Test: 0.9313
+0.8 Noise Test: 0.8779
+0.9 Noise Test: 0.81
