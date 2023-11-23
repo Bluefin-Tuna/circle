@@ -10,6 +10,9 @@ To achieve this, given the fact that it specified that we should use CNN's in th
 
 ## Code Walkthrough
 
+### Environment
+For this project, Anaconda (specifically MiniConda) was the environment manager of choice. If this is not installed refer to this [link](https://docs.anaconda.com/free/anaconda/install/index.html). After that is done, you can run `conda env create -f docs/<OS>-requirements.yml` where OS is either **linux** or **mac**. Note there is no requirements for windows as I do not have access to a windows computer.
+
 ### Dataset
 To start using this GitHub repository and train your own, you first need to create a dataset. To generate this dataset (due to GitHub's file limitations I could not push this), you can simply refer under `circle/notebooks/exploration.ipynb` and execute the **Import** and **Dataset** code block sections sequentially and this will create a diverse, balanced and generalizable dataset of noisy cicles, `circle/data/train/images.npy`, and it's respective labels, `circle/data/train/labels.npy`. This will also generate a test dataset for mixed testing under `circle/data/test`.  Note there is an additional section in the notebook related to data exploration called **Exploration** to see visually how changes in noise level influence the quality of picture.
 

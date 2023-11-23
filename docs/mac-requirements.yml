@@ -1,0 +1,14 @@
+name: CircleDetection
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.22.4
+  - pytorch::pytorch
+  - matplotlib
+  - scikit-image
+  - ipykernel
+  - tqdm
+  - torchvision
+  - torchaudio
+  - pandas

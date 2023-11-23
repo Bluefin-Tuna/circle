@@ -14,4 +14,3 @@ dependencies:
   - torchaudio
   - cudatoolkit
   - pytorch[build=*cuda*]
-prefix: /home/tanush/Miniconda/envs/CircleRegression
